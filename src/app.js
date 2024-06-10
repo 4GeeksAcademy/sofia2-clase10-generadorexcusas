@@ -7,29 +7,29 @@ import "./assets/img/4geeks.ico";
 window.onload = function() {
   //write your code here
 
-  let who = ["The dog", "My grandma", "The mailman", "My bird"];
-  let action = ["ate", "peed", "crushed", "broke"];
-  let what = ["my homework", "my phone", "the car"];
-  let when = [
+  const whoList = ["The dog", "My grandma", "The mailman", "My bird"];
+  const actionList = ["ate", "peed", "crushed", "broke"];
+  const whatList = ["my homework", "my phone", "the car"];
+  const whenList = [
     "before the class",
     "when I was sleeping",
     "while I was exercising",
     "during my lunch",
     "while I was praying"
   ];
-  let primero = Math.floor(Math.random() * who.length);
-  let segundo = Math.floor(Math.random() * action.length);
-  let tercero = Math.floor(Math.random() * what.length);
-  let cuarto = Math.floor(Math.random() * when.length);
+  let primero = Math.floor(Math.random() * whoList.length);
+  let segundo = Math.floor(Math.random() * actionList.length);
+  let tercero = Math.floor(Math.random() * whatList.length);
+  let cuarto = Math.floor(Math.random() * whenList.length);
 
   let excuse =
-    who[primero] +
+    whoList[primero] +
     " " +
-    action[segundo] +
+    actionList[segundo] +
     " " +
-    what[tercero] +
+    whatList[tercero] +
     " " +
-    when[cuarto];
+    whenList[cuarto];
 
   document.getElementById("excuse").innerHTML = excuse;
 };
